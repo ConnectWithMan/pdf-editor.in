@@ -80,7 +80,24 @@
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
         .card { padding: 2rem; border: 1px solid #eee; border-radius: 8px; text-align: center; }
         
-        footer { background: #333; color: #fff; padding: 2rem 0; text-align: center; margin-top: 2rem; }
+        /* How it Works */
+        .how-it-works { padding: 4rem 0; background: #fff; }
+        .how-it-works h2 { text-align: center; margin-bottom: 3rem; }
+        .steps { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2rem; }
+        .step { text-align: center; max-width: 300px; }
+        .step-number { background: var(--primary-color); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold; font-size: 1.2rem; }
+        
+        /* FAQ */
+        .faq { padding: 4rem 0; background: var(--bg-light); }
+        .faq h2 { text-align: center; margin-bottom: 3rem; }
+        .faq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; }
+        .faq-item { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--primary-color); transition: transform 0.2s; }
+        .faq-item:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .faq-item h3 { margin-top: 0; margin-bottom: 0.5rem; color: #333; }
+        .faq-item p { margin: 0; color: #666; }
+        @media (max-width: 768px) { .faq-grid { grid-template-columns: 1fr; } }
+
+        footer { background: #333; color: #fff; padding: 2rem 0; text-align: center; margin-top: 1rem; }
     </style>
 </head>
 <body>
@@ -98,8 +115,7 @@
             <div class="container">
                 <h1>Edit PDF Online for Free</h1>
                 <p>The easiest way to edit PDF files online. Add text, images, shapes, and signatures to your documents without installing any software.</p>
-                <label for="file-upload" class="cta-button">Select PDF File</label>
-                <input type="file" id="file-upload" accept=".pdf" style="display: none;">
+                <a href="https://pdf.famral.com/" class="cta-button">Start Editing PDF</a>
             </div>
         </section>
 
@@ -120,11 +136,64 @@
                 </div>
             </div>
         </section>
+
+        <section class="how-it-works container">
+            <h2>How to Edit PDF Online</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Upload PDF</h3>
+                    <p>Click the button to go to our secure editor and upload your PDF file.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Edit Document</h3>
+                    <p>Use the toolbar to add text, images, shapes, or sign your PDF.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Download</h3>
+                    <p>Save your changes and download the edited PDF file instantly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Is this PDF editor free?</h3>
+                        <p>Yes, our online PDF editor is completely free to use. There are no hidden charges or subscriptions required to edit your documents.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is my data secure?</h3>
+                        <p>Absolutely. We use SSL encryption to ensure your files are safe during transfer. All files are automatically deleted from our servers permanently after processing.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do I need to create an account?</h3>
+                        <p>No, you do not need to register or create an account. You can start editing your PDF files instantly without any login barriers.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I use it on mobile?</h3>
+                        <p>Yes, our PDF editor is fully responsive and works on all devices, including smartphones and tablets, directly through your web browser.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What file formats are supported?</h3>
+                        <p>We primarily support PDF files. You can upload any standard PDF document to add text, signatures, or annotations.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is there a file size limit?</h3>
+                        <p>We support files up to 50MB in size, which covers most standard documents, forms, and scanned papers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 pdf-editor.in. All rights reserved.</p>
+            <p>&copy; 2026 pdf-editor.in. All rights reserved.</p>
         </div>
     </footer>
 
