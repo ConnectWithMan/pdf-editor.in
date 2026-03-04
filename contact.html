@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PDF Editor</title>
+    <link rel="icon" href="https://pdf-editor.in/pdf-editor.png" type="image/png">
+
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCFYMP4036"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KCFYMP4036');
+    </script>
+    
+    <style>
+        :root { --primary-color: #e53935; --text-color: #333; --bg-light: #f5f5f5; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: var(--text-color); line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        header { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); padding: 1rem 0; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-color); text-decoration: none; display: flex; align-items: center; }
+        .nav-links { list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--text-color); font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--primary-color); }
+        .nav-cta { background-color: var(--primary-color); color: white !important; padding: 8px 20px; border-radius: 4px; }
+
+        /* Dropdown Menu */
+        .dropdown { position: relative; }
+        .dropdown-toggle { display: flex; align-items: center; gap: 0.3rem; }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 150%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            list-style: none;
+            padding: 0.5rem 0;
+            margin: 0;
+            min-width: 180px;
+            border-radius: 4px;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s, top 0.2s;
+        }
+        .dropdown-menu li a {
+            padding: 10px 20px;
+            display: block;
+            white-space: nowrap;
+            color: var(--text-color);
+        }
+        .dropdown-menu li a:hover { background-color: #f5f5f5; color: var(--primary-color); }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            top: 100%;
+        }
+        
+        main { flex: 1; padding: 4rem 0; }
+        h1 { color: var(--primary-color); margin-bottom: 1.5rem; }
+        p { margin-bottom: 1.5rem; font-size: 1.1rem; }
+
+        footer { background: #333; color: #fff; padding: 2rem 0; text-align: center; margin-top: auto; }
+        .footer-links { margin-bottom: 1rem; }
+        .footer-links a { color: #fff; text-decoration: none; margin: 0 10px; }
+        .footer-links a:hover { text-decoration: underline; }
+
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 2rem; cursor: pointer; color: var(--text-color); }
+        @media (max-width: 768px) {
+            nav { flex-wrap: wrap; }
+            .mobile-menu-btn { display: block; }
+            .nav-links { display: none; width: 100%; flex-direction: column; gap: 0; text-align: center; padding-top: 1rem; border-top: 1px solid #f0f0f0; margin-top: 1rem; }
+            .nav-links.active { display: flex; }
+            .nav-links li { width: 100%; }
+            .nav-links a:not(.dropdown-toggle) { display: block; padding: 12px 0; }
+            .nav-links .nav-cta { display: inline-block; width: auto; margin: 10px auto; padding: 10px 30px; }
+
+            /* Mobile Dropdown */
+            .dropdown:hover .dropdown-menu { display: none; }
+            .dropdown-toggle { justify-content: space-between; padding: 12px 20px; }
+            .dropdown-menu {
+                position: static;
+                display: none;
+                box-shadow: none;
+                background-color: #f9f9f9;
+                border-radius: 0;
+                padding: 0.5rem 0;
+                text-align: center;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                width: 100%;
+            }
+            .dropdown.active .dropdown-menu { display: block; }
+            .dropdown.active .dropdown-toggle { color: var(--primary-color); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo"><img src="https://pdf-editor.in/pdf-editor.png" alt="PDF Editor" style="height: 40px; vertical-align: middle; margin-right: 10px;">PDF Editor</a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Features &#9662;</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/edit-pdf">Edit PDF</a></li>
+                            <li><a href="/features">More Features</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://pdf.famral.com/" class="nav-cta">Edit PDF</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Whether you have a question about features, need assistance with the editor, or have suggestions for improvement, our team is here to help.</p>
+        
+        <h3>Contact Us</h3>
+        <p>For general inquiries and support, please visit:<br>
+        <a href="https://www.famral.com/contact" style="color: var(--primary-color); font-weight: bold;">https://www.famral.com/contact</a></p>
+
+        <h3>Feedback</h3>
+        <p>Your feedback helps us improve. If you encounter any bugs or have feature requests, please don't hesitate to reach out.</p>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+            </div>
+            <p>&copy; 2026 pdf-editor.in. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        document.querySelectorAll('.dropdown-toggle').forEach(item => {
+            item.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
