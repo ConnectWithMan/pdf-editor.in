@@ -6,45 +6,58 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://pdf-editor.in/</loc>
-  <lastmod>2026-03-04T09:12:59+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://pdf-editor.in/</loc>
+<lastmod>2026-04-10T19:22:41+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://pdf-editor.in/edit-pdf</loc>
-  <lastmod>2026-03-04T09:12:59+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://pdf-editor.in/edit-pdf</loc>
+<lastmod>2026-04-10T19:22:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pdf-editor.in/sign-pdf</loc>
-  <lastmod>2026-03-04T09:12:59+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://pdf-editor.in/merge-pdf</loc>
+<lastmod>2026-04-10T19:22:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pdf-editor.in/features</loc>
-  <lastmod>2026-03-04T09:13:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://pdf-editor.in/sign-pdf</loc>
+<lastmod>2026-04-10T19:22:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pdf-editor.in/about</loc>
-  <lastmod>2026-03-04T09:13:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://pdf-editor.in/protect-pdf</loc>
+<lastmod>2026-04-10T19:22:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pdf-editor.in/contact</loc>
-  <lastmod>2026-03-04T09:12:59+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://pdf-editor.in/compress-pdf</loc>
+<lastmod>2026-04-10T19:22:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pdf-editor.in/privacy</loc>
-  <lastmod>2026-03-04T09:12:59+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://pdf-editor.in/features</loc>
+<lastmod>2026-04-10T19:22:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pdf-editor.in/terms</loc>
-  <lastmod>2026-03-04T09:13:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://pdf-editor.in/about</loc>
+<lastmod>2026-04-10T19:22:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
+<url>
+<loc>https://pdf-editor.in/contact</loc>
+<lastmod>2026-04-10T19:22:41+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://pdf-editor.in/privacy</loc>
+<lastmod>2026-04-10T19:22:41+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://pdf-editor.in/terms</loc>
+<lastmod>2026-04-10T19:22:41+00:00</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>
